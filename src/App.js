@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import PriceCalculator from './components/PriceCalculator';
 
 const Container = styled.div`
-  max-width: 800px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 5rem 0;
 `;
 
 const Title = styled.h1`
@@ -13,13 +14,12 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-
 function App() {
   return (
     <div className="App">
       <Container>
         <Title>Pricing Tiers</Title>
-        
+        <PriceCalculator />
       </Container>
     </div>
   );

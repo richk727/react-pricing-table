@@ -348,12 +348,18 @@ template {
 [hidden] {
   display: none;
 }
-
+:root {
+  --card-bg: #fff;
+  --primary-accent: #ff4b5c;
+  --body-color: #66bfbf;
+  --heading-color: #056674;
+}
 html {
   font-family: 'Noto Sans TC', sans-serif;
-  color: #444;
+  color: var(--body-color);
 }
 
 h1 {
-  color: #333;
+  color: var(--heading-color);
 }
+
