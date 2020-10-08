@@ -70,24 +70,38 @@ const PurchaseButton = styled.button`
   cursor: pointer;
 `;
 
+export default function PriceCard(props) {
+  const {
+    title,
+    monthlyPrice,
+    annualMonthlyPrice,
+    features,
+    buttonText,
+  } = props;
+  function displayIcon(value) {
+    return value == 'tick' ? '✔️' : '➕';
+  }
 export default function PriceCalculator() {
   return (
     <Card>
-      <CardHeader>Plan name</CardHeader>
+      <CardHeader>{title}</CardHeader>
       <Price>
-        <span>£</span>999
+        <span>£</span>
+        {monthlyPrice}
       </Price>
       <PricePerTerms>Per Month</PricePerTerms>
       <CardContent>
         <FeatureList>
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-          <li>Feature 4</li>
+          {features &&
+            features.map((feature, key) => (
+              <li key={key}>
+                {displayIcon(feature['feature-icon'])} {feature['feature-text']}
+              </li>
+            ))}
         </FeatureList>
       </CardContent>
       <div>
-        <PurchaseButton type="button">Buy Now</PurchaseButton>
+        <PurchaseButton type="button">{buttonText}</PurchaseButton>
       </div>
     </Card>
   );

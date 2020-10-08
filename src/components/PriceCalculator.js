@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PlanCard from '../components/PlanCard';
+import { PricePlans } from '../PricePlans';
 
 const Row = styled.div`
   display: grid;
@@ -19,9 +20,17 @@ function PriceCalculator() {
     <div>
       <Controls>Monthly/Annualy</Controls>
       <Row>
-        <PlanCard />
-        <PlanCard />
-        <PlanCard />
+        {PricePlans &&
+          PricePlans.map((plan) => (
+            <PlanCard
+              key={plan['plan-id']}
+              title={plan.title}
+              monthlyPrice={plan['monthly-price']}
+              annualMonthlyPrice={plan['annual-monthly-price']}
+              features={plan.features}
+              buttonText={plan['button-text']}
+            />
+          ))}
       </Row>
     </div>
   );
