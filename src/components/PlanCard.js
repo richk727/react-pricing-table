@@ -73,6 +73,7 @@ const PurchaseButton = styled.button`
 export default function PriceCard(props) {
   const {
     title,
+    setAnnualPrice,
     monthlyPrice,
     annualMonthlyPrice,
     features,
@@ -81,13 +82,13 @@ export default function PriceCard(props) {
   function displayIcon(value) {
     return value == 'tick' ? '✔️' : '➕';
   }
-export default function PriceCalculator() {
+  const price = setAnnualPrice ? annualMonthlyPrice : monthlyPrice;
   return (
     <Card>
       <CardHeader>{title}</CardHeader>
       <Price>
         <span>£</span>
-        {monthlyPrice}
+        {price}
       </Price>
       <PricePerTerms>Per Month</PricePerTerms>
       <CardContent>
