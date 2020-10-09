@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { ReactComponent as CheckIcon } from '../assets/checkmark-sharp.svg';
+import { ReactComponent as AddIcon } from '../assets/add-sharp.svg';
 
 const Card = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   text-align: center;
   background: var(--card-background);
@@ -46,6 +50,7 @@ const PricePerTerms = styled.div`
 
 const CardContent = styled.div`
   postion: relative;
+  flex: 1 0 auto;
   margin: 1rem 0;
   padding: 1rem 0;
   border-top: 1px solid #eee;
@@ -53,12 +58,25 @@ const CardContent = styled.div`
 `;
 
 const FeatureList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: left;
+`;
 
-  li {
-    padding: 0.25rem 0;
+const FeatureItem = styled.li`
+  position: relative;
+  padding: 0.5rem 0 0.5rem 2rem;
+
+  svg {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    width: 1.25rem;
+    color: var(--primary-accent);
   }
 `;
 
@@ -69,6 +87,13 @@ const PurchaseButton = styled.button`
   background: var(--primary-accent);
   border: none;
   cursor: pointer;
+  transition: all 150ms ease-out;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgb(63 45 86 / 0.15), 0 4px 4px rgb(63 45 86 / 0.25);
+  }
 `;
 
 const PriceCard = (props) => {
@@ -81,7 +106,10 @@ const PriceCard = (props) => {
     buttonText,
   } = props;
   function displayIcon(value) {
-    return value === 'tick' ? '✔️' : '➕';
+    if (value === 'tick') {
+      return <CheckIcon />;
+    }
+    return <AddIcon />;
   }
   const price = setAnnualPrice ? annualMonthlyPrice : monthlyPrice;
   return (
@@ -96,9 +124,9 @@ const PriceCard = (props) => {
         <FeatureList>
           {features &&
             features.map((feature, key) => (
-              <li key={key}>
+              <FeatureItem key={key}>
                 {displayIcon(feature['feature-icon'])} {feature['feature-text']}
-              </li>
+              </FeatureItem>
             ))}
         </FeatureList>
       </CardContent>

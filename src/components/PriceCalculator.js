@@ -5,8 +5,12 @@ import { PricePlans } from '../PricePlans';
 
 const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const Controls = styled.div`

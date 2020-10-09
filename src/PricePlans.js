@@ -25,7 +25,7 @@ export const PricePlans = [
     title: 'Professional',
     'annual-monthly-price': '39.99',
     'monthly-price': '49.99',
-    'button-text': 'Get Caked',
+    'button-text': 'Get SUPER Caked',
     features: [
       {
         'feature-text': '500 Cakes a month',
@@ -50,7 +50,7 @@ export const PricePlans = [
     title: 'Enterprise',
     'annual-monthly-price': '79.99',
     'monthly-price': '99.99',
-    'button-text': 'Get Caked',
+    'button-text': 'Get ABSOLUTELY Caked',
     features: [
       {
         'feature-text': '999 Cakes a month',
