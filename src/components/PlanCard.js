@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Card = styled.div`
   padding: 2rem;
@@ -70,7 +71,7 @@ const PurchaseButton = styled.button`
   cursor: pointer;
 `;
 
-export default function PriceCard(props) {
+const PriceCard = (props) => {
   const {
     title,
     setAnnualPrice,
@@ -80,7 +81,7 @@ export default function PriceCard(props) {
     buttonText,
   } = props;
   function displayIcon(value) {
-    return value == 'tick' ? '✔️' : '➕';
+    return value === 'tick' ? '✔️' : '➕';
   }
   const price = setAnnualPrice ? annualMonthlyPrice : monthlyPrice;
   return (
@@ -106,4 +107,14 @@ export default function PriceCard(props) {
       </div>
     </Card>
   );
-}
+};
+
+PriceCard.propTypes = {
+  title: PropTypes.string,
+  setAnnualPrice: PropTypes.string,
+  monthlyPrice: PropTypes.string,
+  annualMonthlyPrice: PropTypes.string,
+  features: PropTypes.array,
+  buttonText: PropTypes.string,
+};
+export default PriceCard;
