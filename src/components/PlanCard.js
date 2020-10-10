@@ -112,6 +112,9 @@ const PriceCard = (props) => {
     return <AddIcon />;
   }
   const price = setAnnualPrice ? annualMonthlyPrice : monthlyPrice;
+  const priceSubtext = setAnnualPrice
+    ? 'Per Month, billed annualy'
+    : 'Per Month, billed monthly';
   return (
     <Card>
       <CardHeader>{title}</CardHeader>
@@ -119,7 +122,7 @@ const PriceCard = (props) => {
         <span>£</span>
         {price}
       </Price>
-      <PricePerTerms>Per Month</PricePerTerms>
+      <PricePerTerms>{priceSubtext}</PricePerTerms>
       <CardContent>
         <FeatureList>
           {features &&

@@ -348,6 +348,11 @@ template {
 [hidden] {
   display: none;
 }
+
+
+* {
+  box-sizing: border-box;
+}
 :root {
   --card-bg: #fff;
   --primary-accent: #ff4b5c;
