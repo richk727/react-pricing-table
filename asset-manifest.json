@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/richk727/react-pricing-table/static/css/main.0b132b47.chunk.css",
-    "main.js": "/richk727/react-pricing-table/static/js/main.3d3de3a4.chunk.js",
-    "main.js.map": "/richk727/react-pricing-table/static/js/main.3d3de3a4.chunk.js.map",
-    "runtime-main.js": "/richk727/react-pricing-table/static/js/runtime-main.ec21380b.js",
-    "runtime-main.js.map": "/richk727/react-pricing-table/static/js/runtime-main.ec21380b.js.map",
-    "static/js/2.6abd4b7d.chunk.js": "/richk727/react-pricing-table/static/js/2.6abd4b7d.chunk.js",
-    "static/js/2.6abd4b7d.chunk.js.map": "/richk727/react-pricing-table/static/js/2.6abd4b7d.chunk.js.map",
-    "index.html": "/richk727/react-pricing-table/index.html",
-    "precache-manifest.17c5e57293967a0d35d4f8f1fd4d4de5.js": "/richk727/react-pricing-table/precache-manifest.17c5e57293967a0d35d4f8f1fd4d4de5.js",
-    "service-worker.js": "/richk727/react-pricing-table/service-worker.js",
-    "static/css/main.0b132b47.chunk.css.map": "/richk727/react-pricing-table/static/css/main.0b132b47.chunk.css.map",
-    "static/js/2.6abd4b7d.chunk.js.LICENSE.txt": "/richk727/react-pricing-table/static/js/2.6abd4b7d.chunk.js.LICENSE.txt",
-    "static/media/add-sharp.a04be9ce.svg": "/richk727/react-pricing-table/static/media/add-sharp.a04be9ce.svg",
-    "static/media/checkmark-sharp.4232211e.svg": "/richk727/react-pricing-table/static/media/checkmark-sharp.4232211e.svg"
+    "main.css": "/react-pricing-table/static/css/main.0b132b47.chunk.css",
+    "main.js": "/react-pricing-table/static/js/main.d55e9866.chunk.js",
+    "main.js.map": "/react-pricing-table/static/js/main.d55e9866.chunk.js.map",
+    "runtime-main.js": "/react-pricing-table/static/js/runtime-main.705d5015.js",
+    "runtime-main.js.map": "/react-pricing-table/static/js/runtime-main.705d5015.js.map",
+    "static/js/2.c36d5dbf.chunk.js": "/react-pricing-table/static/js/2.c36d5dbf.chunk.js",
+    "static/js/2.c36d5dbf.chunk.js.map": "/react-pricing-table/static/js/2.c36d5dbf.chunk.js.map",
+    "index.html": "/react-pricing-table/index.html",
+    "precache-manifest.3188035f9fd10f03e202d08dc83c749f.js": "/react-pricing-table/precache-manifest.3188035f9fd10f03e202d08dc83c749f.js",
+    "service-worker.js": "/react-pricing-table/service-worker.js",
+    "static/css/main.0b132b47.chunk.css.map": "/react-pricing-table/static/css/main.0b132b47.chunk.css.map",
+    "static/js/2.c36d5dbf.chunk.js.LICENSE.txt": "/react-pricing-table/static/js/2.c36d5dbf.chunk.js.LICENSE.txt",
+    "static/media/add-sharp.a04be9ce.svg": "/react-pricing-table/static/media/add-sharp.a04be9ce.svg",
+    "static/media/checkmark-sharp.4232211e.svg": "/react-pricing-table/static/media/checkmark-sharp.4232211e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec21380b.js",
-    "static/js/2.6abd4b7d.chunk.js",
+    "static/js/runtime-main.705d5015.js",
+    "static/js/2.c36d5dbf.chunk.js",
     "static/css/main.0b132b47.chunk.css",
-    "static/js/main.3d3de3a4.chunk.js"
+    "static/js/main.d55e9866.chunk.js"
   ]
 }
